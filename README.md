@@ -1,8 +1,9 @@
 # Hvv REST API for Go
 A RESTful API example for Hvv. Documentation can be found at: https://geofox.hvv.de/gti/doc/index.jsp
 
-## Requirements
+##Requirements
 - Key and Username provided by HBT
+
 
 ##Installation
 The easiest way to use the HVV API in your Go project is to install it using **go get**:
@@ -10,8 +11,7 @@ The easiest way to use the HVV API in your Go project is to install it using **g
 go get https://github.com/emrearmagan/Hvv-REST-API
 ```
 
-Before running, you should set the config values in **[config.go]**
-(https://github.com/emrearmagan/Hvv-REST-API/config/config.go)
+Before running, you should set the config values in [config.go](https://github.com/emrearmagan/Hvv-REST-API/blob/master/config/config.go)
 ```go
 func GetDeparuteRequest() *HVVDepartureListRequest {
 	return &HVVDepartureListRequest{

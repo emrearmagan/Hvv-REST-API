@@ -1,7 +1,6 @@
 package testing
 
 import (
-	"Go-MagicMirror/api"
 	"encoding/json"
 	"fmt"
 	"hvvApi/app"
@@ -136,7 +135,7 @@ func TestHvvGetRouteSignature(t *testing.T) {
 	}
 
 	expectedSignature := "BZpAZcNY1An89aEFGaPkVZsNTMw="
-	s := api.ComputeHmac256(reqBody, string(h.Apikey))
+	s := app.ComputeHmac256(reqBody, string(h.Apikey))
 
 	if !reflect.DeepEqual(s, expectedSignature) {
 		t.Errorf("expected %v, was %v", expectedSignature, s)
